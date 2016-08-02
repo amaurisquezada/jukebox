@@ -36,40 +36,6 @@ $(document).ready(function(){
 		myJuke.addSong(songB);
 		myJuke.addSong(songC);
 		myJuke.addSong(songD);
-		myJuke.addSong(songA);
-		myJuke.addSong(songB);
-		myJuke.addSong(songC);
-		myJuke.addSong(songD);
-		myJuke.addSong(songA);
-		myJuke.addSong(songB);
-		myJuke.addSong(songC);
-		myJuke.addSong(songD);
-		myJuke.addSong(songA);
-		myJuke.addSong(songB);
-		myJuke.addSong(songC);
-		myJuke.addSong(songD);
-		myJuke.addSong(songA);
-		myJuke.addSong(songA);
-		myJuke.addSong(songB);
-		myJuke.addSong(songC);
-		myJuke.addSong(songD);
-		myJuke.addSong(songA);
-		myJuke.addSong(songB);
-		myJuke.addSong(songC);
-		myJuke.addSong(songD);
-		myJuke.addSong(songA);
-		myJuke.addSong(songB);
-		myJuke.addSong(songC);
-		myJuke.addSong(songD);
-		myJuke.addSong(songA);
-		myJuke.addSong(songB);
-		myJuke.addSong(songC);
-		myJuke.addSong(songD);
-		myJuke.addSong(songA);
-		myJuke.addSong(songB);
-		myJuke.addSong(songC);
-		myJuke.addSong(songD);
-		myJuke.addSong(songA);
 
 
 		} else {
@@ -140,6 +106,8 @@ $(document).ready(function(){
 
 	function dust() {
 		myJuke.songs[Object.keys(myJuke.songs).length] = {artist: $('#artistname').val(), song: $('#songname').val(), site: $('#urlname').val()};
+		Cookies.set("playlist", JSON.stringify(myJuke));
+		console.log(Cookies.get())
 		$('#all-tracks').prepend("<li class='allsongs " + (Object.keys(myJuke.songs).length - 1) + "'>" + $('#artistname').val() + "-" + $('#songname').val() + "</li>");
 		$('.add-inst').css('display', 'none');
 		$('#x-wrapper-2').append('<i class="fa fa-times remove-song" id="s'+ songCounter + '" aria-hidden="true"></i>');
@@ -157,8 +125,7 @@ $(document).ready(function(){
 			$('#musicPlayer').attr('src',  myJuke.songs[parseInt($(e.currentTarget).attr('class').split(' ')[1])].site);
 			setTimeout(function() {
 				player.play()
-			}, 150);			
-			Cookies.set("playlist", JSON.stringify(myJuke));
+			}, 150);
 			$('#musicPlayer').on('ended', function(){
 				$('#music-playing').css('display', 'none')
 				$('#no-music').css('display', 'block')
