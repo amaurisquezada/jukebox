@@ -1,0 +1,249 @@
+body {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	background: url(../images/background.png);
+}
+
+#audio-player-wrapper {
+	width: 100%;
+	height: 56vh;
+}
+
+#mysongs{
+	float: left;
+	margin-top: 15px;
+	width: 88%;
+	height: 65vh;
+	overflow: auto;
+}
+
+#allsongs-header{
+	margin-top: 5px;
+	padding: 0; 
+	color: yellow;
+}
+
+#site-header {
+	text-align: center;
+	background: url(../images/background.png);
+	width: 50%;
+	margin: 0 auto;
+	color: yellow;
+	font-weight: bold;
+}
+
+#left-bar {
+	width: 49vw;
+	border-left: rgb(36, 180, 255) solid 8px;
+	border-bottom: rgb(36, 180, 255) solid 8px;
+	border-right: rgb(36, 180, 255) solid 8px;
+	height: 98vh;
+	background: url(../images/background.png);
+	float: left;
+	clear: none;
+	position: absolute;
+	top: 7px;
+	left: 7px;
+}
+
+#top-bar {
+	float: left;
+	width: 48vw;
+	background: rgb(36, 180, 255);
+	height: 4%;
+	border: 4px rgb(36, 180, 255) solid;
+}
+
+li.allsongs, .plistsongs { 
+	cursor: pointer;
+	color: rgb(36, 180, 255);
+	margin-left: 15px;
+}
+
+
+#new-song-form {
+	position: relative;
+	width: 95%;
+	margin-top: 8px;
+	margin-left: 3px;
+}
+
+#audioplayer {
+	background: url(../images/background.png);
+	height: 35vh;
+}
+
+#right-bar {
+	width: 48vw;
+	border: rgb(36, 180, 255) solid 8px;
+	height: 98vh;
+	background: url(../images/background.png);
+	float: left;
+	clear: none;
+	position: absolute;
+	top: 7px;
+	right: 7px;
+}
+
+#names, #places{
+	padding: 0;
+	width: 200px;
+	margin-left: 20px;
+}
+
+#plist {
+	width: 89%;
+	height: 40vh;
+	margin-left: 10%;
+}
+
+.plist-play{
+	margin-left: 10px;
+}
+
+#font-control {
+	font-size: 30px;
+}
+
+.remove-song {
+	float: left;
+	clear: both;
+	background-color: url(../images/background.png);
+	padding-right: 4px;
+}
+.plistsongs {
+}
+
+#x-wrapper, #x-wrapper-2{
+	display: block;
+	width: 10%;
+	float: left;
+	font-size: 20px;
+	background-color: url(../images/background.png);
+}
+
+#x-wrapper {
+	height: 20vh;
+}
+
+#x-wrapper-2 {
+	height: 20vh;
+}
+
+#color-wa {
+	background: url(../images/background.png);
+	overflow: auto;
+}
+
+
+#default-bar {
+	width: 40%;
+	position: relative;
+	background-color: white;
+	height: 10px;
+	display: inline-block;
+}
+
+#progress-bar {
+	position: absolute;
+	height: 10px;
+	background-color: yellow;
+	width: 0px;
+}
+
+#my-plist-header {
+	font-size: 30px;
+	color: yellow;
+}
+
+#visualizer {
+	height: 38vh;
+	width: 100%;
+	position: relative;
+}
+
+.remove-song {
+	background: url(../images/background.png);
+	color: yellow;
+}
+
+input {
+	background: rgb(36, 180, 255);
+	border: none;
+	width: 25%;
+}
+
+#new-song-submit {
+	width: 60px;
+	color: black;
+}
+
+label {
+	color: yellow;
+}
+
+i {
+	color: rgb(36, 180, 255);
+}
+
+#music-playing {
+	display: none;
+}
+
+#jukebox-wrapper {
+	border: black solid 3px;
+}
+
+img {
+	width:100%;
+  height:100%;
+}
+
+.drag-inst, .add-inst {
+	color: yellow;
+	position: relative;
+	top: 5vh;
+	margin-left: 10px;
+}
+
+.add-inst {
+	display: none;
+}
+
+.now-playing {
+	margin-left: 3px;
+	color: yellow;
+}
+
+#new-form-title {
+	color: yellow;
+}
+
+ol { 
+	counter-reset: item;
+}
+
+ol li { 
+	display: block; 
+}
+
+ol li:before {
+  content: counter(item) ". ";
+  counter-increment: item;
+  color: yellow;
+}
+
+.time-markers{
+	color: yellow;
+}
+
+.slash {
+	color: rgb(36, 180, 255);
+}
+
+#error-message {
+	display: none;
+	color: red;
+	margin-bottom: 0;
+}

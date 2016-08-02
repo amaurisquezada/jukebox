@@ -1,57 +1,80 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="jukebox.css">
-		<link rel="stylesheet" type="text/css" href="bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="font-awesome.css">
-		<script type="text/javascript" src="jquery-2.2.3.js"></script>
-		<script type="text/javascript" src="jquery-ui.js"></script>
-		<script type="text/javascript" src="cookies.js"></script>
-		<script type="text/javascript" src="jukebox.js"></script>
+		<link rel="stylesheet" type="text/css" href="stylesheets/jukebox.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.css">
+		<script type="text/javascript" src="javascript/jquery-2.2.3.js"></script>
+		<script type="text/javascript" src="javascript/jquery-ui.js"></script>
+		<script type="text/javascript" src="javascript/jquery.ui.touch-punch.js"></script>
+		<script type="text/javascript" src="javascript/js.cookies.js"></script>
+		<script type="text/javascript" src="javascript/jukebox.js"></script>
 		<title></title>
 	</head>
 	<body>
-		<div id="left-bar">
-			<div id="top-bar">
-				<p id="site-header">MOWDEE's JukeBox</p>
-			</div>
-			<div id="random">
-				<div id="audioplayer">
-					<audio id="blah" controls src="" type="audio/mpeg" onloadedmetadata="setTotalTime()" ontimeupdate="setCurrentTime()">
-					</audio>
-						<h1 id="my-plist-header">My Playlist</h1>
-						<div id="font-control">
-							<i class="fa fa-play plist-play" aria-hidden="true"></i>
-							<i class="fa fa-pause plist-pause" aria-hidden="true"></i>
-							<i class="fa fa-stop plist-stop" aria-hidden="true"></i>
-							<i class="fa fa-random plist-shuffle" aria-hidden="true"></i>
-							<i class="fa fa-step-backward plist-previous" aria-hidden="true"></i>
-							<i class="fa fa-step-forward plist-next" aria-hidden="true"></i>
-							<i class="fa fa-volume-up plist-mute" aria-hidden="true"></i>
-							<span id="current-time" class="time-markers">0:00</span>/<span id="total-time" class="time-markers">0:00</span>
-						</div>
-						<ol id="plist">
-						</ol>
-						<div id="sort-status"></div>
+		<div id="jukebox-wrapper">
+			<div id="left-bar">
+				<div id="top-bar">
+					<h5 id="site-header">AMAURIS' JukeBox</h5>
+				</div>
+				<div id="audio-player-wrapper">
+					<div id="audioplayer">
+						<audio id="musicPlayer" src="" type="audio/mpeg">
+						</audio>
+						<audio id="musicPlayer2">
+						</audio>
+							<h1 id="my-plist-header">My Playlist</h1>
+							<div id="font-control">
+								<i class="fa fa-play plist-play" aria-hidden="true"></i>
+								<i class="fa fa-pause plist-pause" aria-hidden="true"></i>
+								<i class="fa fa-stop plist-stop" aria-hidden="true"></i>
+								<i class="fa fa-random plist-shuffle" aria-hidden="true"></i>
+								<i class="fa fa-step-backward plist-previous" aria-hidden="true"></i>
+								<i class="fa fa-step-forward plist-next" aria-hidden="true"></i>
+								<i class="fa fa-volume-up plist-mute" aria-hidden="true"></i>
+								<div id="default-bar">
+									<div id="progress-bar"></div>								
+								</div>
+								<span id="current-time" class="time-markers">0:00</span><span class="slash">/</span><span id="total-time" class="time-markers">0:00</span>
+							</div>
+							<div id="color-wa">
+								<h4 class="drag-inst">To add to your playlist, drag songs from your tracklist here</h4>	
+								<ul id="x-wrapper">					
+								</ul>
+								<ol id="plist">	
+								</ol>
+							</div>
+							<div id="sort-status"></div>
+					</div>
+				</div>
+				<div id="visualizer">
+					<img src="images/visualizer.gif" id="music-playing">
+					<img src="images/nomusic.png" id="no-music">			
 				</div>
 			</div>
-		</div>
-		<div id="right-bar">
-			<h1 id="allsongs-header">All Songs</h1>
-			<div id="new-song-form">
-				<label id=songnamelabel>Song Name</label>
-				<input type="input" name="" id="songname">
-				<label id=artistnamelabel>Artist</label>
-				<input type="input" name="" id="artistname">
-				<br>
-				<label id=urllabel>Url</label>
-				<input type="input" name="" id="urlname">
-				<input type="submit" name="Submit", id="new-song-submit">
-			</div>
-			<div id="mysongs">
-				<ol id="all-tracks">
-				
-				</ol>
+			<div id="right-bar">
+				<div id="new-song-form">
+					<h4 id="new-form-title">Add Song</h4>
+					<label id=songnamelabel>Song Name</label>
+					<input type="input" name="" id="songname">
+					<label id=artistnamelabel>Artist</label>
+					<input type="input" name="" id="artistname">
+					<br>
+					<label id=urllabel>Url</label>
+					<input type="input" name="" id="urlname">
+					<input type="submit" name="Submit", id="new-song-submit">
+					<h6 id="error-message">Invalid URL. Please make sure you copied the URL correctly and that it is a supported audio format.</h6>
+					<br class="line-break">
+					<br class="line-break">
+				</div>
+				<h4 id="allsongs-header">Tracklist</h4>
+					<div id="mysongs">
+						<h4 class="add-inst">Your tracklist is empty! Please add songs in with the above form!</h4>
+						<ul id="x-wrapper-2">					
+						</ul>
+						<ol id="all-tracks">				
+						</ol>
+				<div>
 			</div>
 		</div>
 	</body>
