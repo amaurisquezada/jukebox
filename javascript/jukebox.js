@@ -105,7 +105,7 @@ $(document).ready(function(){
 	//click function adds a new song to the Jukebox.songs attribute. Adds appropriate drag/double click functionality
 
 	function dust() {
-		myJuke.songs[Object.keys(myJuke.songs).length] = {artist: $('#artistname').val(), song: $('#songname').val(), site: $('#urlname').val()};
+		myJuke.songs[Object.keys(myJuke.songs).length] = {artist: $('#artistname').val(), songName: $('#songname').val(), site: $('#urlname').val()};
 		Cookies.set("playlist", JSON.stringify(myJuke));
 		console.log(Cookies.get())
 		$('#all-tracks').prepend("<li class='allsongs " + (Object.keys(myJuke.songs).length - 1) + "'>" + $('#artistname').val() + "-" + $('#songname').val() + "</li>");
