@@ -150,23 +150,7 @@ $(document).ready(function(){
 	}
 
 	$('#new-song-submit').click(function(){
-		$('#musicPlayer2').off('error')
-		$('#musicPlayer2').attr('src',  $('#urlname').val());
-		$('#musicPlayer2').on('error', function(){
-			canPlay = false
-			$('#error-message').css('display', 'block')
-			$('.line-break').css('display', 'none')
-			setTimeout(function(){
-				canPlay=true
-			},300)
-		})
-		setTimeout(function(){
-			if(canPlay === true) {
-				$('#error-message').css('display', 'none')
-				$('.line-break').css('display', 'block')
-				dust()
-			}
-		}, 200);
+		dust()
 	});
 
 	//function to randomize elements
