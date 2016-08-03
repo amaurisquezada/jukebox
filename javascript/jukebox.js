@@ -22,20 +22,29 @@ $(document).ready(function(){
 	}
 
 	if (Cookies.get("playlist") === undefined) {
-		var songA = new Song("Lloyd Banks", "On Fire", "sample_songs/fire.mp3"),
-				songB = new Song("Kid Ink", "Be Real", "sample_songs/bereal.mp3"),
-				songC = new Song("Jay Z", "Gotta Have It", "sample_songs/gotta.mp3"),
-				songD = new Song("Lloyd Banks", "Warrior", "sample_songs/warrior.mp3");
+		var songA = new Song("Sia", "Cheap Thrills", "https://archive.org/download/SiaCheapThrillsVideo/Sia%20-%20Cheap%20Thrills%20(Video).mp3"),
+				songB = new Song("Drake", "One Dance", "https://archive.org/download/onedance_drake/12.%20One%20Dance%20(Ft.%20Wizkid%20&%20Kyla).mp3"),
+				songC = new Song("Calvin Harris ft. Rihanna", "This Is What You Came For", "https://archive.org/download/01ThisIsWhatYouCameForfeat.RihannaSingle/01%20This%20Is%20What%20You%20Came%20For%20(feat.%20Rihanna)%20-%20Single.mp3"),
+				songD = new Song("Justin Timberlake", "Can't Stop The Feeling", "https://archive.org/download/JustinTimberlakeCantStopTheFeelingLyricsVideo/Justin%20Timberlake%20-%20Can't%20Stop%20the%20Feeling%20(%20Lyrics%20Video%20).mp3"),
+				songE = new Song("The Chainsmokers", "Don't Let Me Down", "https://archive.org/download/TheChainsmokersDontLetMeDownFt.Daya/The%20Chainsmokers%20-%20Don't%20Let%20Me%20Down%20ft.%20Daya.mp3"),
+				songF = new Song("Adele", "Send My Love", "https://archive.org/download/Moon_Yoon_Hee_pop_570/Adele-SendMyLovetoYourNewLover.mp3"),
+				songG = new Song("Drake", "Controlla", "http://lynxshare.com/files/8/5v51z5zshckfch/audio.mp3"),
+				songH = new Song("Florida Georgia LIne", "H.O.L.Y.", "https://archive.org/download/H.O.L.Y.FloridaGeorgiaLineLyrics/H.O.L.Y.%20-%20Florida%20Georgia%20Line%20Lyrics.mp3"),
+				songI = new Song("Twenty One Pilots","Stressed Out","https://archive.org/download/Twenty-one-pilots-Stressed-Out-OFFICIAL-VIDEO/twenty-one-pilots-Stressed-Out-[OFFICIAL-VIDEO].mp3"),
+				songJ = new Song("Lukas Graham","7 Years","https://archive.org/download/LukasGraham7YearsOFFICIALMUSICVIDEO/Lukas%20Graham%20-%20%207%20Years%20[OFFICIAL%20MUSIC%20VIDEO].mp3");
 
 		myJuke = new Jukebox();
 		myJuke.addSong(songA);
 		myJuke.addSong(songB);
 		myJuke.addSong(songC);
 		myJuke.addSong(songD);
-		myJuke.addSong(songA);
-		myJuke.addSong(songB);
-		myJuke.addSong(songC);
-		myJuke.addSong(songD);
+		myJuke.addSong(songE);
+		myJuke.addSong(songF);
+		myJuke.addSong(songG);
+		myJuke.addSong(songH);
+		myJuke.addSong(songI);
+		myJuke.addSong(songJ);
+
 
 
 		} else {
