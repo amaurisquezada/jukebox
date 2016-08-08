@@ -10,6 +10,16 @@ body {
 	height: 56vh;
 }
 
+#clear-tracklist, #default-tracklist{
+	color: yellow;
+	font-size: 12px;
+}
+
+#divider{
+	color: rgb(36, 180, 255);
+	margin: 0 4px;
+}
+
 #mysongs{
 	float: left;
 	margin-top: 15px;
