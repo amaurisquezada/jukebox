@@ -75,7 +75,6 @@ $(document).ready(function(){
 						$("#all-tracks li:eq(" + songId.slice(1, songId.length) + ")").remove();
 						$("#x-wrapper-2 i:eq(" + ($('#x-wrapper-2 i').length - 1) + ")").remove();
 						delete myJuke.songs[Object.keys(myJuke.songs)[songId.slice(1, songId.length)]]
-						console.log(myJuke.songs)
 						setTimeout(function(){
 							Cookies.set("playlist", JSON.stringify(myJuke));
 						}, 300);
@@ -141,7 +140,6 @@ $(document).ready(function(){
 	function addNewSong() {
 		myJuke.songs[Object.keys(myJuke.songs).length] = {artist: $("#artistname").val(), songName: $("#songname").val(), site: $("#urlname").val()};
 		Cookies.set("playlist", JSON.stringify(myJuke));
-		console.log(Cookies.get("playlist"))
 		$("#all-tracks").prepend("<li class='allsongs " + (Object.keys(myJuke.songs).length - 1) + "'>" + $('#artistname').val() + "-" + $('#songname').val() + "</li>");
 		$(".add-inst").css("display", "none");
 		$("#x-wrapper-2").append("<i class='fa fa-times remove-song' id='s"+ songCounter + "'' aria-hidden='true'></i>");
