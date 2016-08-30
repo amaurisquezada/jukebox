@@ -26,7 +26,7 @@ $(document).ready(function(){
 	function defaultSetup() {
 		var songA = new Song("Sia", "Cheap Thrills", "https://archive.org/download/SiaCheapThrillsVideo/Sia%20-%20Cheap%20Thrills%20(Video).mp3"),
 				songB = new Song("Drake", "One Dance", "https://archive.org/download/onedance_drake/12.%20One%20Dance%20(Ft.%20Wizkid%20&%20Kyla).mp3"),
-				songC = new Song("Calvin Harris ft. Rihanna", "This Is What You Came For", "https://archive.org/download/01ThisIsWhatYouCameForfeat.RihannaSingle/01%20This%20Is%20What%20You%20Came%20For%20(feat.%20Rihanna)%20-%20Single.mp3"),
+				songC = new Song("Calvin Harris", "This Is What You Came For", "https://archive.org/download/01ThisIsWhatYouCameForfeat.RihannaSingle/01%20This%20Is%20What%20You%20Came%20For%20(feat.%20Rihanna)%20-%20Single.mp3"),
 				songD = new Song("Justin Timberlake", "Can't Stop The Feeling", "https://archive.org/download/JustinTimberlakeCantStopTheFeelingLyricsVideo/Justin%20Timberlake%20-%20Can't%20Stop%20the%20Feeling%20(%20Lyrics%20Video%20).mp3"),
 				songE = new Song("The Chainsmokers", "Don't Let Me Down", "https://archive.org/download/TheChainsmokersDontLetMeDownFt.Daya/The%20Chainsmokers%20-%20Don't%20Let%20Me%20Down%20ft.%20Daya.mp3"),
 				songF = new Song("Adele", "Send My Love", "https://archive.org/download/Moon_Yoon_Hee_pop_570/Adele-SendMyLovetoYourNewLover.mp3"),
