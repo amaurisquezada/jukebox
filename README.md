@@ -6,13 +6,13 @@ Amauris' Jukebox is an online jukebox that allows users to add free audio files.
 
 **Instructions:**
 
-* The jukebox is composed of two main sections, the playlist of the left and the tracklist on the right. For user convenience, the tracklist comes with 8 songs preloaded.
+* The jukebox is composed of two main sections, the playlist on the left and the tracklist on the right. For user convenience, the tracklist comes with 8 preloaded songs.
 
-*To play a song at any time, simply double-click the song.
+* To play a song at any time, simply double-click the song.
 
 * To add songs to the tracklist, a user must add the song's title, artist and a URL to the audio file. Many websites such as [archive.org](www.archive.org) contain free URLs to popular songs. 
 
-	* These URLs must end in HTML5 supported audio formats (i.e. https://archive.org/download/Moon_Yoon_Hee_pop_570/Adele-SendMyLovetoYourNewLover.mp3). Common supported types are MP3 and AAC amongst others.
+	* These URLs must end in HTML5 supported audio formats (i.e. https://archive.org/download/Moon_Yoon_Hee_pop_570/Adele-SendMyLovetoYourNewLover.mp3). Common supported types are MP3 and AAC, amongst others.
 
 * After a song is added to the tracklist, it can be dragged and dropped to the playlist. From the playlist, songs can be sorted to play in a desired order or a user can click the shuffle button the play the songs in random order.
 
