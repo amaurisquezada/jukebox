@@ -2,7 +2,7 @@
 
 Amauris' Jukebox is an online jukebox that allows users to add free audio files.  
 
-[http://amauris-jukebox.herokuapp.com]http://amauris-jukebox.herokuapp.com)
+[http://amauris-jukebox.herokuapp.com](http://amauris-jukebox.herokuapp.com)
 
 **Instructions:**
 
